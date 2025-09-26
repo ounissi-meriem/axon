@@ -1,0 +1,76 @@
+{
+    "name": "axon-ai",
+    "version": "0.1.0",
+    "description": "A self-organizing cognitive architecture based on Global Workspace Theory",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "engines": {
+        "node": ">=16.0.0"
+    },
+    "scripts": {
+        "build": "tsc",
+        "prepublishOnly": "npm run build",
+        "lint": "eslint . --ext .ts",
+        "example:basic": "ts-node -r tsconfig-paths/register examples/basic-usage.ts",
+        "example:advanced": "ts-node -r tsconfig-paths/register examples/advanced-usage.ts"
+    },
+    "keywords": [
+        "cognitive-architecture",
+        "global-workspace-theory",
+        "ai",
+        "artificial-intelligence",
+        "emergence",
+        "agents",
+        "multi-agent",
+        "llm",
+        "large-language-model",
+        "nlp",
+        "natural-language-processing"
+    ],
+    "author": {
+        "name": "Stas Darevskiy",
+        "email": "stas@stas.gg",
+        "url": "https://github.com/stasadance"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/stasadance/axon.git"
+    },
+    "bugs": {
+        "url": "https://github.com/username/axon/issues"
+    },
+    "homepage": "https://github.com/username/axon#readme",
+    "dependencies": {
+        "@langchain/community": "^0.3.56",
+        "@langchain/core": "^0.3.77",
+        "langchain": "^0.3.34",
+        "nanoid": "^3.3.6",
+        "node-fetch": "^2.7.0",
+        "openai": "^4.12.1",
+        "tiktoken": "^1.0.10",
+        "uuid": "^9.0.1",
+        "zod": "^3.22.4",
+        "zod-to-json-schema": "^3.22.3"
+    },
+    "devDependencies": {
+        "@types/jest": "^29.5.5",
+        "@types/node": "^20.8.2",
+        "@types/node-fetch": "^2.6.6",
+        "@types/uuid": "^9.0.4",
+        "@typescript-eslint/eslint-plugin": "^6.7.4",
+        "@typescript-eslint/parser": "^6.7.4",
+        "eslint": "^8.50.0",
+        "jest": "^29.7.0",
+        "ts-jest": "^29.1.1",
+        "ts-node": "^10.9.1",
+        "tsconfig-paths": "^4.2.0",
+        "typescript": "^5.2.2"
+    },
+    "packageManager": "yarn@4.10.3"
+}

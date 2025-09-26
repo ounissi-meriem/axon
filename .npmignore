@@ -1,0 +1,27 @@
+# Source files
+src/
+examples/
+
+# Config files
+.eslintrc.js
+jest.config.js
+tsconfig.json
+
+# Tests
+**/*.test.ts
+**/*.spec.ts
+test/
+tests/
+
+# Other files
+.gitignore
+.github/
+.vscode/
+node_modules/
+.env*
+
+# Build artifacts
+.DS_Store
+Thumbs.db
+*.log
+yarn-error.log
