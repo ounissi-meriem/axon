@@ -43,9 +43,9 @@
         "url": "https://github.com/stasadance/axon.git"
     },
     "bugs": {
-        "url": "https://github.com/username/axon/issues"
+        "url": "https://github.com/stasadance/axon/issues"
     },
-    "homepage": "https://github.com/username/axon#readme",
+    "homepage": "https://github.com/stasadance/axon#readme",
     "dependencies": {
         "@langchain/community": "^0.3.56",
         "@langchain/core": "^0.3.77",
